@@ -52,8 +52,8 @@ with st.sidebar:
     )
     model = st.selectbox(
         "🧠 Model",
-        ["llama3-8b-8192", "llama3-70b-8192", "mixtral-8x7b-32768"],
-        help="LLaMA 3 8B is fastest, 70B is smartest"
+        ["llama-3.1-8b-instant", "llama-3.3-70b-versatile", "mixtral-saba-24b"],
+        help="LLaMA 3.1 8B is fastest, 3.3 70B is smartest"
     )
     temperature = st.slider("🌡️ Creativity", 0.0, 1.0, 0.7, 0.1,
                            help="Higher = more creative responses")
